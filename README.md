@@ -213,6 +213,7 @@ ML Bike Rental/
 |-- app.py                            # Interactive Streamlit dashboard
 |-- bike_demand_xgboost_bundle.pkl    # Model, regime mapping, feature schema
 |-- hour.csv                          # Raw hourly dataset
+|-- requirements.txt                  # Deployment dependencies
 |-- figures/                          # EDA and diagnostic figures
 |   |-- fig1_target_distribution.png
 |   |-- fig2_hourly_by_daytype.png
@@ -239,7 +240,7 @@ The README visuals are generated from `assets/generate_assets.py`, so the charts
 
 ```bash
 # 1. Install the runtime dependencies
-pip install streamlit pandas numpy scikit-learn xgboost joblib altair
+pip install -r requirements.txt
 
 # 2. Launch the dashboard
 streamlit run app.py

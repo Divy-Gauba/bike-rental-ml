@@ -322,6 +322,7 @@ ML Bike Rental/
 |-- app.py                            # Interactive Streamlit dashboard
 |-- bike_demand_xgboost_bundle.pkl    # Serialized model, regime mapping, feature schema
 |-- hour.csv                          # Raw hourly dataset
+|-- requirements.txt                  # Deployment dependencies
 |-- figures/                          # EDA and diagnostic figures
 |   |-- fig1_target_distribution.png
 |   |-- fig2_hourly_by_daytype.png
