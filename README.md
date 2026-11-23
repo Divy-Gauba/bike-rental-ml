@@ -15,7 +15,7 @@ An end-to-end machine learning study that predicts hourly bike rental demand for
 | :--- | :--- |
 | Dataset | 17,379 hourly observations, 2011-2012 |
 | Target | `cnt`, total hourly rentals |
-| Champion model | XGBoost on `log(1 + cnt)` |
+| Selected model | XGBoost on `log(1 + cnt)` |
 | Holdout R2 | 0.9522 |
 | Holdout RMSE | 38.90 bikes/hour |
 | Holdout MAE | 23.23 bikes/hour |
@@ -41,7 +41,7 @@ Raw hourly records move through cleaning, feature engineering, model training, v
 
 | Rank | Model family | RMSE | MAE | R2 | Note |
 | :---: | :--- | ---: | ---: | ---: | :--- |
-| 1 | **XGBoost Regressor** | **38.90** | **23.23** | **0.9522** | Champion: lowest error and tightest variance |
+| 1 | **XGBoost Regressor** | **38.90** | **23.23** | **0.9522** | Lowest error and tightest variance |
 | 2 | Random Forest | 41.01 | 23.77 | 0.9469 | Strong bagged baseline |
 | 3 | Hist Gradient Boosting | 41.18 | 24.87 | 0.9465 | Fast scikit-learn GBDT |
 | 4 | Ridge Regression | 127.20 | 74.33 | 0.4890 | Linear baseline misses nonlinear thresholds |

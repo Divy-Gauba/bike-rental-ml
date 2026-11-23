@@ -189,7 +189,7 @@ Five model families were benchmarked on the count scale after back-transformatio
 
 The result confirms the expected pattern: tree ensembles capture nonlinear interactions between hour, day type, weather, and temperature, while a linear model underfits the daily cycle.
 
-### 5.2 Champion configuration
+### 5.2 Selected model configuration
 
 ```python
 XGBRegressor(
